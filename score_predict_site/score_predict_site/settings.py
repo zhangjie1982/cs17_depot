@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'predict_site',
+    'captcha',
 ]
 
 MIDDLEWARE = [
