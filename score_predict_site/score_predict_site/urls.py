@@ -20,7 +20,7 @@ from predict_site import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/',views.home),
-    path('login/',views.login),
+    path('home/', views.home),
+    path('login/', views.login),
     path('captcha', include('captcha.urls'))
 ]
