@@ -26,7 +26,16 @@ SECRET_KEY = '9hoaiwo6x8%%@sxizushm5k57#_4ojvh=ihjk%dis7tf4yi8r@'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'login'
+    'captcha',
+]
 
 # Application definition
 
