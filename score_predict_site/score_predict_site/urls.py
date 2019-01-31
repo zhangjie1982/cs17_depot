@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', views.home),
     path('login/', views.login),
+    path('score/', views.score),
     path('captcha', include('captcha.urls'))
 ]
