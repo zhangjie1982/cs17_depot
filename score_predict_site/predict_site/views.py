@@ -35,5 +35,3 @@ def login(request):
     login_form = UserForm()
     return render(request, 'login.html', locals())
 
-def cource(request):
-    pass
