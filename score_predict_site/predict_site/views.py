@@ -8,11 +8,16 @@ from predict_site.models import Users
 
 def home(request):
     user_logged = Users.objects.get(stu_no=request.session['user_stu_no'])
-    return render(request, 'home.html', {'user': user_logged, 'portrait': '/static/user_portrait/portrait'+user_logged.stu_no+'.png'})
+    return render(request, 'home.html',
+                  {'user': user_logged, 'portrait': '/static/user_portrait/portrait' + user_logged.stu_no + '.png'})
+
 
 def score(request):
     user_logged = Users.objects.get(stu_no=request.session['user_stu_no'])
-    return render(request, 'score.html',{'user': user_logged, 'portrait': '/static/user_portrait/portrait'+user_logged.stu_no+'.png'})
+    return render(request, 'score.html',
+                  {'user': user_logged, 'portrait': '/static/user_portrait/portrait' + user_logged.stu_no + '.png'})
+
+
 def login(request):
     if request.method == "POST":
         login_form = UserForm(request.POST)
