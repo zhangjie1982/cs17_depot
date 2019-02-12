@@ -40,3 +40,6 @@ def login(request):
     login_form = UserForm()
     return render(request, 'login.html', locals())
 
+def scorepredict(request):
+    return render(request,'scorepredict.html')
+
