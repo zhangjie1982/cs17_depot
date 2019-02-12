@@ -23,5 +23,6 @@ urlpatterns = [
     path('home/', views.home),
     path('login/', views.login),
     path('score/', views.score),
+    path('scorepredict/',views.scorepredict),
     path('captcha', include('captcha.urls'))
 ]
